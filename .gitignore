@@ -1,0 +1,16 @@
+# build output
+dist/
+
+# files the app writes next to the exe at runtime
+DeepDark.settings
+DeepDark.ramp.*
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+
+# misc
+Thumbs.db
+desktop.ini
