@@ -6,6 +6,8 @@
 
 单文件 · 免安装 · 无需管理员权限 · 内存约 5 MB · CPU 约 0.04% · GPU 0%
 
+[![下载最新版](https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD%E6%9C%80%E6%96%B0%E7%89%88-DeepDark.exe-blue?style=for-the-badge&logo=windows)](https://github.com/xiehuangsw/DeepDark/releases/latest)
+
 [![build](https://github.com/xiehuangsw/DeepDark/actions/workflows/build.yml/badge.svg)](https://github.com/xiehuangsw/DeepDark/actions/workflows/build.yml)
 [![release](https://img.shields.io/github/v/release/xiehuangsw/DeepDark?include_prereleases)](https://github.com/xiehuangsw/DeepDark/releases)
 [![license](https://img.shields.io/github/license/xiehuangsw/DeepDark)](LICENSE)
@@ -153,3 +155,5 @@ DeepDark/
 ## 开源协议
 
 [MIT](LICENSE)
+
+欢迎提交 [Issue](https://github.com/xiehuangsw/DeepDark/issues) 与 PR，参与方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。

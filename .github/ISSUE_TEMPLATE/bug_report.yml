@@ -1,0 +1,78 @@
+name: 问题反馈
+description: 报告一个 bug 或异常行为
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量把下面的信息填全，能大幅加快定位速度。
+        提交前可以先看一眼 [README 的常见问题](https://github.com/xiehuangsw/DeepDark#常见问题)。
+
+  - type: input
+    id: version
+    attributes:
+      label: DeepDark 版本
+      description: Releases 页面上的版本号，或右键 exe → 属性 → 详细信息
+      placeholder: v1.0.0
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      description: Win + R 输入 winver 可以看到
+      placeholder: Windows 11 24H2 (26200)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: hdr
+    attributes:
+      label: 是否开启 HDR / 高级颜色
+      description: 开启 HDR 时系统会忽略 gamma 调光，程序会自动改用覆盖窗
+      options:
+        - "否"
+        - "是"
+        - "不确定"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: gpu
+    attributes:
+      label: 显卡
+      options:
+        - Intel
+        - AMD
+        - NVIDIA
+        - 高通
+        - 其他 / 不确定
+
+  - type: input
+    id: display
+    attributes:
+      label: 显示器情况
+      description: 笔记本内屏还是外接？是否多屏？分辨率与缩放比例
+      placeholder: 笔记本内屏 2560×1600 @150%
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 问题描述
+      description: 你做了什么操作、期望的结果、实际的结果
+      placeholder: |
+        1. 我双击了 DeepDark.exe
+        2. 期望……
+        3. 实际……
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 其他信息（可选）
+      description: 截图、错误提示原文、任务管理器里的进程状态等
+    validations:
+      required: false

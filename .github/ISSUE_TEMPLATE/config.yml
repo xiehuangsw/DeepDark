@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 使用说明与常见问题
+    url: https://github.com/xiehuangsw/DeepDark#常见问题
+    about: 安装、托盘图标、HDR、夜灯、恢复屏幕等问题的解答都写在 README 里
+  - name: 下载最新版本
+    url: https://github.com/xiehuangsw/DeepDark/releases/latest
+    about: 到 Releases 页面下载 DeepDark.exe

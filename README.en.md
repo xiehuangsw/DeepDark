@@ -6,6 +6,8 @@
 
 Single file · No installer · No admin rights · ~5 MB RAM · ~0.04% CPU · 0% GPU
 
+[![Download latest](https://img.shields.io/badge/Download-DeepDark.exe-blue?style=for-the-badge&logo=windows)](https://github.com/xiehuangsw/DeepDark/releases/latest)
+
 [![build](https://github.com/xiehuangsw/DeepDark/actions/workflows/build.yml/badge.svg)](https://github.com/xiehuangsw/DeepDark/actions/workflows/build.yml)
 [![release](https://img.shields.io/github/v/release/xiehuangsw/DeepDark?include_prereleases)](https://github.com/xiehuangsw/DeepDark/releases)
 [![license](https://img.shields.io/github/license/xiehuangsw/DeepDark)](LICENSE)
@@ -122,3 +124,5 @@ powershell -ExecutionPolicy Bypass -File build.ps1
 ## License
 
 [MIT](LICENSE)
+
+Issues and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
