@@ -1,0 +1,40 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write      # 附加文件到 Release 需要写权限
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build DeepDark.exe
+        shell: pwsh
+        run: ./build.ps1
+
+      - name: Verify output
+        shell: pwsh
+        run: |
+          if (-not (Test-Path dist/DeepDark.exe)) { throw 'dist/DeepDark.exe was not produced' }
+          Get-ChildItem dist | Format-Table Name, Length
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DeepDark
+          path: dist/*
+
+      # 打 tag（例如 v1.0.0）时，自动把编译好的文件附到 Release 上
+      - name: Attach to release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
